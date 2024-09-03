@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #1c1c1e;
+  }
+  
+  .footer a {
+    color: #e0e0e0;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #e51a3b;
+  }

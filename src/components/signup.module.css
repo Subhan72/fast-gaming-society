@@ -1,0 +1,225 @@
+.signupContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d1d1e 0%, #930505 100%);
+  color: #e0e0e0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1c1e;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav h1 {
+  color: #e0e0e0;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  width: auto;
+}
+
+.logoLarge {
+  width: 350px; 
+  height: 350px; 
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+h1, h2 {
+  color: #e0e0e0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  background: #1c1c1e;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #617182;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #e51a3b;
+  box-shadow: 0 0 5px rgba(229, 26, 59, 0.5);
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #e51a3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ffff;
+  color: #e81b3d;
+  transform: translateY(-2px);
+}
+
+.loginSection {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.loginLink {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #e51a3b;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.loginLink:hover {
+  background-color: #ffff;
+  color: #e81b3d;
+  transform: translateY(-2px);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #1c1c1e;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #e0e0e0;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #e51a3b;
+}
+
+@media (max-width: 600px) {
+  .signupContainer {
+    flex-direction: column;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    flex: none;
+    width: 100%;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .loginLink {
+    font-size: 0.875rem;
+  }
+}
+
+.errorInput {
+  border-color: #e51a3b;
+  box-shadow: 0 0 5px rgba(229, 26, 59, 0.5);
+}
+
+.errorMessage {
+  color: #e51a3b;
+  font-size: 0.875rem;
+  text-align: left;
+  margin-top: -0.75rem;
+  margin-bottom: 1rem;
+}

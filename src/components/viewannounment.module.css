@@ -1,0 +1,93 @@
+.announmentList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem;
+}
+
+.announment {
+  background: #1c1c1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(33.333% - 1.5rem);
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s, max-height 0.5s ease-in-out, padding 0.5s;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 300px;
+  padding: 1rem;
+}
+
+.announment.expanded {
+  max-height: 1000px;
+  padding: 1rem;
+}
+
+.announment:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.announmentImage {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px 10px 0 0;
+}
+
+.announmentTitle {
+  padding: 1rem 0;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.announmentDetails {
+  padding: 1rem;
+  color: #e0e0e0;
+  display: none;
+  text-align: center;
+}
+
+.announmentDetails.show {
+  display: block;
+}
+
+.announmentDetails h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.announmentDetails p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+.b1 {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e51a3b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.b1:hover {
+  background-color: #fff;
+  color: #e51a3b;
+}
+
+@media (max-width: 600px) {
+  .announment {
+    width: 100%;
+  }
+}

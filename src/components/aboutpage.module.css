@@ -1,0 +1,133 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1d1d1e 0%, #930505 100%);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.rightPanel {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logoLarge {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logoLarge:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #e51a3b;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #e51a3b;
+}
+
+.teamSection {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+.teamSection:hover {
+  background: #444;
+}
+
+.teamName {
+  font-size: 1.8rem;
+  color: #e51a3b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.teamLeader, .teamMember {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.teamMember p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: #1c1c1e;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #e0e0e0;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #e51a3b;
+}
+
+@media (max-width: 600px) {
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .leftPanel, .rightPanel {
+    width: 100%;
+  }
+
+  .title, .subtitle {
+    font-size: 1.5rem;
+  }
+}
